@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>NugetRepro</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Chris Reddington</Authors>
+    <Company>Contoso</Company>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>nuget_repro</RootNamespace>
+    <PackageDescription>This is a demonstration package!</PackageDescription>
+    <RepositoryUrl>https://github.com/chrisreddington/nuget-repro</RepositoryUrl>
+  </PropertyGroup>
+
+</Project>
