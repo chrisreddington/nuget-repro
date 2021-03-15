@@ -45,6 +45,7 @@ jobs:
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
+          source-url: ${{ env.AZURE_ARTIFACTS_FEED_URL }}
           
       # Run dotnet build and package
       - name: dotnet build and test
@@ -91,6 +92,7 @@ jobs:
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
+          source-url: ${{ env.GITHUB_PACKAGE_REGISTRY_URL }}
         env:
           NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Setup the .NET Core SDK with the appropriate auth token to access the GitHub Package Registry
       
